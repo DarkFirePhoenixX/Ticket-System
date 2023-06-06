@@ -1,0 +1,61 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #6a11cb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, rgba(106,17,203,1), rgba(37,117,252,1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, rgba(106,17,203,1), rgba(37,117,252,1))
+  }
+
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
+}
+
+*{
+    font-family: 'EB Garamond', serif;
+}
+
+.seat {
+    width: 20px;
+    height: 20px;
+    margin: 1px;
+    border: solid 1px black;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.clearfix { clear: both;}
+.available {
+    background-color: #96c131;
+}
+
+.hovering{
+    cursor: pointer;
+	background-color: #ae59b3;
+}
+.selected{
+    background-color: red;
+}
+
+.train-seat-container{
+  z-index: 1; 
+  right:0 !important; 
+  position: absolute;
+   margin-right: -20px !important;
+   margin-top: 50px !important;
+}
